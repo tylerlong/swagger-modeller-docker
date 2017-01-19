@@ -16,6 +16,6 @@ COPY migrate.sql /tmp/
 
 RUN service postgresql start && PGPASSWORD=ringcentral.c0m psql -U tyler.liu -d swagger_modeller -f /tmp/migrate.sql
 
-COPY database.yml ~/src/ruby/swagger_modeller/config/
+COPY database.yml ~/src/ruby/swagger-modeller/config/
 
 EXPOSE 3000
