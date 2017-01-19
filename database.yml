@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  database: swagger_modeller
+  username: tyler.liu
+  password: ringcentral.c0m
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  database: swagger_modeller_test
+
+production:
+  <<: *default
