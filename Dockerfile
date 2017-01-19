@@ -18,4 +18,4 @@ RUN service postgresql start && PGPASSWORD=ringcentral.c0m psql -U tyler.liu -d 
 
 COPY database.yml ~/src/ruby/swagger_modeller/config/
 
-RUN cd ~/src/ruby/swagger-modeller && service postgresql start && rails s -b 0.0.0.0
+EXPOSE 3000
