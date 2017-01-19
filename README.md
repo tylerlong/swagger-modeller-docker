@@ -14,11 +14,11 @@ A docker image named `swagger_modeller` will be created.
 
 ## How to start the website
 
+Start Kitematic
+
 Create a container using the image created above.
 
-Create a port mapping so you can access container's 3000 port number from your host browser.
-
-Let's say you've mapped host:9000 to container:3000
+Check the container's ports settings, let's say 192.168.99.100:32768 is mapped to container:3000
 
 In the container, run:
 
@@ -26,4 +26,4 @@ In the container, run:
 cd ~/src/ruby/swagger-modeller && service postgresql start && rails s -b 0.0.0.0
 ```
 
-Then open http://localhost:9000 to visit the website.
+Then open http://192.168.99.100:32768 to visit the website.
